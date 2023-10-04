@@ -139,8 +139,8 @@ export function Layout() {
                         </IconButton>
 
                         <Chip
-                            avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg"/>}
-                            label={"okan"}
+                            avatar={<Avatar alt="O" src="/static/images/avatar/1.jpg"/>}
+                            label={"Ollang"}
                             variant="outlined"
                         />
                         <IconButton sx={{ml: 1}}>

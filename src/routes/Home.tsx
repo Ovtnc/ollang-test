@@ -25,7 +25,9 @@ function Home () {
 <AccountCircleIcon/>
                         </ListItemAvatar>
                         <ListItemText primary={user.name} />
-                        <Button  href={`/profile/${user.id}`} variant="contained" color="primary">
+                        <Button  href={`/profile/${user.id}`} variant="contained" sx={{
+                            width:100
+                        }} color="primary">
                             Details
                         </Button>
                     </ListItem>
