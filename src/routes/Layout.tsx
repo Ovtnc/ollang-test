@@ -83,7 +83,7 @@ const logo = require('../644082449df5ab2b939848e7_ollang-logo.webp');
 export function Layout() {
 
 
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const toggleDrawer = () => {
         setOpen(!open);
     };
@@ -150,7 +150,7 @@ export function Layout() {
                         </IconButton>
                     </Toolbar>
                 </AppBar>
-                <Drawer variant="permanent" open={open}>
+                <Drawer anchor="bottom" variant="permanent" open={open}>
 
                     <Toolbar
                         sx={{

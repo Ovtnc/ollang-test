@@ -24,14 +24,6 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import SearchIcon from "@mui/icons-material/Search";
-import {useEffect, useState} from "react";
-import ListItemText from "@mui/material/ListItemText";
-
-import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
-import {red} from "@mui/material/colors";
-import IconButton from "@mui/material/IconButton";
 import { User } from '../routes/Profile';
 
 
@@ -51,15 +43,6 @@ const GradientButton = {
     p:1,
     m:1
 };
-
-interface UserDetails {
-    id: number;
-    name: string;
-    // Diğer kullanıcı bilgileri buraya eklenebilir
-}interface DetailsInformationProps {
-    userId: number | null;
-}
-
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -128,13 +111,13 @@ export default function ProfileCard({user}: {user : User})  {
 
 
             <Grid container spacing={2}>
-                <Grid item>
+                <Grid item >
                     <ButtonBase sx={{ width: 128, height: 128 }}>
                         <Img alt="complex" src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png?ga=GA1.1.1231133104.1662810684" />
                     </ButtonBase>
                 </Grid>
                 <Grid item xs={12} md container>
-                    <Grid item xs container direction="column" spacing={2}>
+                    <Grid item sm container direction="column" spacing={2}>
                         <Grid item xs>
                             <Typography gutterBottom variant="subtitle1" component="div">
                                 {user.name}
@@ -171,7 +154,7 @@ export default function ProfileCard({user}: {user : User})  {
 
                 <Grid container columns={{ xs: 4, sm: 8, md: 12 }} >
 
-                        <Grid item xs={12} sm={4} md={4}     sx={{
+                        <Grid item xs={4} sm={4} md={4}     sx={{
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -186,7 +169,7 @@ export default function ProfileCard({user}: {user : User})  {
                             />
                         </Grid>
 
-                    <Grid item xs={12} sm={4} md={4} sx={{
+                    <Grid item xs={4} sm={4} md={4} sx={{
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',

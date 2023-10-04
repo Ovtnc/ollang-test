@@ -21,9 +21,7 @@ function Home () {
             <List>
                 {users.map(user => (
                     <ListItem key={user.id}>
-                        <ListItemAvatar>
-<AccountCircleIcon/>
-                        </ListItemAvatar>
+
                         <ListItemText primary={user.name} />
                         <Button  href={`/profile/${user.id}`} variant="contained" sx={{
                             width:100

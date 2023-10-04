@@ -90,10 +90,12 @@ export default function TabDetails({user}: {user : User}) {
 
 
                     <Button sx={{
-
+width: 100,
                         borderRadius:200,
                         backgroundColor: "#1a73e8",
                         color: "#ffffff",
+                        textTransform: "none",
+                        m:0.5
 
 
                     }} variant={"contained"}>
